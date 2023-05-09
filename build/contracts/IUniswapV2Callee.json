@@ -1,0 +1,430 @@
+{
+  "contractName": "IUniswapV2Callee",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount0",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "uniswapV2Call",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"uniswapV2Call\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/Kunnow/Desktop/sushi-quick-arbitrage/contracts/interfaces/IUniswapV2Callee.sol\":\"IUniswapV2Callee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Kunnow/Desktop/sushi-quick-arbitrage/contracts/interfaces/IUniswapV2Callee.sol\":{\"keccak256\":\"0x60615581108606075743481a37f2a2063b67eaab251dc82d6d49205743cda4aa\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://83fab16b8daf94f6098ae5d315b7274c2971cc49ba947d390b2e6319014d95b8\",\"dweb:/ipfs/QmQAHSKzftBT3zNQnwgjBwymdHpheRd5CWQF7i4cPSGx3K\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity >=0.5.0;\r\n\r\ninterface IUniswapV2Callee {\r\n    function uniswapV2Call(address sender, uint amount0, uint amount1, bytes calldata data) external;\r\n}\r\n",
+  "sourcePath": "C:/Users/Kunnow/Desktop/sushi-quick-arbitrage/contracts/interfaces/IUniswapV2Callee.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Kunnow/Desktop/sushi-quick-arbitrage/contracts/interfaces/IUniswapV2Callee.sol",
+    "exportedSymbols": {
+      "IUniswapV2Callee": [
+        818
+      ]
+    },
+    "id": 819,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 806,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:24:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 818,
+        "linearizedBaseContracts": [
+          818
+        ],
+        "name": "IUniswapV2Callee",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "10d1e85c",
+            "id": 817,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "uniswapV2Call",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 815,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 808,
+                  "mutability": "mutable",
+                  "name": "sender",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 817,
+                  "src": "120:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 807,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "120:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 810,
+                  "mutability": "mutable",
+                  "name": "amount0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 817,
+                  "src": "136:12:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 809,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "136:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 812,
+                  "mutability": "mutable",
+                  "name": "amount1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 817,
+                  "src": "150:12:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 811,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "150:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 814,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 817,
+                  "src": "164:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 813,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "164:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "119:65:4"
+            },
+            "returnParameters": {
+              "id": 816,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "193:0:4"
+            },
+            "scope": 818,
+            "src": "97:97:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 819,
+        "src": "63:134:4"
+      }
+    ],
+    "src": "35:164:4"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/C/Users/Kunnow/Desktop/sushi-quick-arbitrage/contracts/interfaces/IUniswapV2Callee.sol",
+      "exportedSymbols": {
+        "IUniswapV2Callee": [
+          818
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.5",
+            ".0"
+          ]
+        },
+        "id": 806,
+        "name": "PragmaDirective",
+        "src": "35:24:4"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            818
+          ],
+          "name": "IUniswapV2Callee",
+          "scope": 819
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "10d1e85c",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "uniswapV2Call",
+              "scope": 818,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "sender",
+                      "scope": 817,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 807,
+                        "name": "ElementaryTypeName",
+                        "src": "120:7:4"
+                      }
+                    ],
+                    "id": 808,
+                    "name": "VariableDeclaration",
+                    "src": "120:14:4"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount0",
+                      "scope": 817,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 809,
+                        "name": "ElementaryTypeName",
+                        "src": "136:4:4"
+                      }
+                    ],
+                    "id": 810,
+                    "name": "VariableDeclaration",
+                    "src": "136:12:4"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount1",
+                      "scope": 817,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 811,
+                        "name": "ElementaryTypeName",
+                        "src": "150:4:4"
+                      }
+                    ],
+                    "id": 812,
+                    "name": "VariableDeclaration",
+                    "src": "150:12:4"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "data",
+                      "scope": 817,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "bytes",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 813,
+                        "name": "ElementaryTypeName",
+                        "src": "164:5:4"
+                      }
+                    ],
+                    "id": 814,
+                    "name": "VariableDeclaration",
+                    "src": "164:19:4"
+                  }
+                ],
+                "id": 815,
+                "name": "ParameterList",
+                "src": "119:65:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 816,
+                "name": "ParameterList",
+                "src": "193:0:4"
+              }
+            ],
+            "id": 817,
+            "name": "FunctionDefinition",
+            "src": "97:97:4"
+          }
+        ],
+        "id": 818,
+        "name": "ContractDefinition",
+        "src": "63:134:4"
+      }
+    ],
+    "id": 819,
+    "name": "SourceUnit",
+    "src": "35:164:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-27T23:53:08.896Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
