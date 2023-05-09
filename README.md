@@ -1,7 +1,7 @@
 # Flashloan-arbitrage-bot
 Tool for finding and performing arbitrages on dexes using a flash loan for more liquidity.
  
-A sample application that invokes a flashloan with `Flash Swaps` and a monitoring tool for arbitrages in Node.js.
+A sample application that invokes a flashloan and performs a `Flash Swap` and a monitoring tool for arbitrages in Node.js.
 To know details about `Flash Swaps`: visit https://uniswap.org/docs/v2/core-concepts/flash-swaps/
  
 ## software version
